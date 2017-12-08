@@ -1,4 +1,4 @@
-# wordpress-bootstrap-theme-starter
+# degeneratum-wordpress-theme
 
 Starting place for develoing a Bootstrap based Wordpress theme. Contains Dockerfile with NodeJS and Grunt for linting.
 
