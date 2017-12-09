@@ -54,7 +54,7 @@ $ make dev
 # OR
 
 $ docker-compose up
-$ docker exec -it wordpressbootstrapthemestarter_wordpress_1 /bin/bash
+$ docker exec -it degeneratumwordpresstheme_wordpress_1 /bin/bash
 $ cd /var/working
 $ npm install
 $ grunt
