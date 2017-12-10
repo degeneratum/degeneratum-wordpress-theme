@@ -858,7 +858,7 @@ footer#colophon a {
 }
 /* for fixing size of youtube vids */
 .entry-summary-video iframe {
-  max-height: 150px;
+  max-height: 250px;
 }
 /*--------------------------------------------------------------
 # Typography

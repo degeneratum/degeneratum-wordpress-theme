@@ -1,5 +1,5 @@
 <!-- Post Wrap Start-->
-<div class="post hentry ivycat-post col-xs-12 col-md-4">
+<div class="post hentry ivycat-post col-xs-12 col-md-6">
 	
 	<!-- 	This outputs the post TITLE -->
 	<h4 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
