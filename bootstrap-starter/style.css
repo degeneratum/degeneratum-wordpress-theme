@@ -856,6 +856,10 @@ footer#colophon a {
     padding-top: 0.938rem;
   }
 }
+/* for fixing size of youtube vids */
+.entry-summary iframe {
+  max-height: 150px;
+}
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
