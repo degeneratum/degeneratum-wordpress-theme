@@ -6,7 +6,7 @@
 
 	<!-- 	This outputs the post.  To display experpt content including images and html, 
 		replace the_excerpt(); with the_content();  below. -->
-	<div class="entry-summary">
+	<div class="entry-summary entry-summary-video">
 		<?php the_content(); ?>
 	</div>
 
