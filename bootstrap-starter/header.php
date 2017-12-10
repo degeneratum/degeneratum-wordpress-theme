@@ -46,7 +46,7 @@
         </div>
     <?php endif; ?>
     
-	<header id="masthead" class="site-header navbar-static-top" role="banner">
+	<header id="masthead" class="site-header navbar-static-top  <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>navbar-static-top-home transparent <?php endif; ?>" role="banner">
         <div class="container">
             <nav class="navbar navbar-expand-xl navbar-dark p-0">
                 <div class="navbar-brand">

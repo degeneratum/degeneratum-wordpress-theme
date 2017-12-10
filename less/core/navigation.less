@@ -6,7 +6,7 @@ header#masthead {
   background-color: rgba(0,0,0,0.9) ;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
   padding: .74rem 1rem;
-  border-bottom: 1px solid #9175bb ;
+  border-bottom: 0px solid #000 ;
 }
 
 .navbar-brand > a {
@@ -29,13 +29,14 @@ header#masthead {
   text-align: center;
   font-size: 1.25rem;
   background-size: cover !important;
+  background-position-x: center !important;
 }
 
 #page-sub-header h1 {
   line-height: 1;
-  font-size: 4rem;
-  color: #563e7c;
-  margin: 0 0 1rem;
+  font-size: 2rem;
+  color: rgba(255,255,255,.75);
+  margin: 0;
   border: 0;
   padding: 0;
 }
@@ -43,13 +44,13 @@ header#masthead {
 #page-sub-header p {
   margin-bottom: 0;
   line-height: 1.4;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
-  color: #212529;
+  color: rgba(255,255,255,.75);
 }
 @media screen and (max-width: 767px) {
 	a.page-scroller {
-	  color: #333;
+	  color: #fff;
 	  font-size: 2.6rem;
 	  display: inline-block;
 	  position:absolute;
@@ -64,20 +65,18 @@ header#masthead {
 }
 @media screen and (max-width: 767px) {
   #page-sub-header {
-    min-height: ~"calc(100vh - 55px)";
+    min-height: ~"calc(100vh)";
 	max-height: 750px;
-	margin-top: 55px
   }
 }
 @media screen and (min-width: 768px) {
   #page-sub-header h1 {
-    font-size: 3.750rem;
+    font-size: 1.50rem;
     line-height: 1;
   }
-
   #page-sub-header {
-    font-size: 1.25rem;
-    min-height: 350px;
+    font-size: .75rem;
+    min-height: ~"calc(100vh)";
   }
 }
 @media screen and (min-width: 992px) {
@@ -86,7 +85,7 @@ header#masthead {
     margin: 0 auto;
   }
    #page-sub-header {
-    min-height:400px
+    min-height: ~"calc(100vh - 56px)";
   }
 }
 /*--------------------------------------------------------------
@@ -97,19 +96,25 @@ header#masthead {
   padding-right: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
 	#masthead.navbar-static-top {
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 1;
   		transition: transform .25s ease-in-out,
-		 			opacity 0.55s ease;
+		 			opacity 0.55s ease,
+					background-color 0.5s ease,
+					box-shadow 0.5s ease;
 	}
 	#masthead.navbar-static-top.offscreen {
 		transform: translateY(-100%);
 	}
-	
+	#masthead.navbar-static-top-home.transparent {
+		opacity: 0.75;
+		background-color:rgba(0,0,0, 0.5);
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5), inset 0 0px 0 rgba(0,0,0,0.5);
+	}
 }
 
 #masthead .navbar-nav > li > a {
@@ -128,6 +133,12 @@ header#masthead {
 
 .navbar-brand {
   height: auto;
+  margin-top:-5px;
+}
+
+.navbar-brand img{
+	max-height: 55px;
+	margin:-15px;
 }
 
 .navbar-toggle .icon-bar {
