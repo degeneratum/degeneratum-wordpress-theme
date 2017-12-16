@@ -67,7 +67,7 @@
                 wp_nav_menu(array(
                 'theme_location'    => 'primary',
                 'container'       => 'div',
-                'container_id'    => '',
+                'container_id'    => 'main_nav_items',
                 'container_class' => 'collapse navbar-collapse justify-content-end',
                 'menu_id'         => false,
                 'menu_class'      => 'navbar-nav',
@@ -76,6 +76,8 @@
                 'walker'          => new wp_bootstrap_navwalker()
                 ));
                 ?>
+                
+               
 
             </nav>
         </div>

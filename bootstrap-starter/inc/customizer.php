@@ -19,7 +19,84 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
 
 
 
-    //Style Preset
+    //Social
+
+    $wp_customize->add_section(
+        'social_menu',
+        array(
+            'title' => __( 'Social', 'wp-bootstrap-starter' ),
+            //'description' => __( 'This is a section for the typography', 'wp-bootstrap-starter' ),
+            'priority' => 19,
+        )
+    );
+
+    $wp_customize->add_setting( 'social_menu_facebook', array(
+        'default'   => '',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'social_menu_facebook', array(
+        'label' => __( 'Facebook', 'wp-bootstrap-starter' ),
+        'section'    => 'social_menu',
+        'settings'   => 'social_menu_facebook',
+        'type'    => 'text'
+    ) ) );
+	
+    $wp_customize->add_setting( 'social_menu_twitter', array(
+        'default'   => '',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'social_menu_twitter', array(
+        'label' => __( 'Twitter', 'wp-bootstrap-starter' ),
+        'section'    => 'social_menu',
+        'settings'   => 'social_menu_twitter',
+        'type'    => 'text'
+    ) ) );
+	
+    $wp_customize->add_setting( 'social_menu_instagram', array(
+        'default'   => '',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'social_menu_instagram', array(
+        'label' => __( 'Instagram', 'wp-bootstrap-starter' ),
+        'section'    => 'social_menu',
+        'settings'   => 'social_menu_instagram',
+        'type'    => 'text'
+    ) ) );
+	
+    $wp_customize->add_setting( 'social_menu_bandcamp', array(
+        'default'   => '',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'social_menu_bandcamp', array(
+        'label' => __( 'Bandcamp', 'wp-bootstrap-starter' ),
+        'section'    => 'social_menu',
+        'settings'   => 'social_menu_bandcamp',
+        'type'    => 'text'
+    ) ) );
+	
+    $wp_customize->add_setting( 'social_menu_youtube', array(
+        'default'   => '',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'social_menu_youtube', array(
+        'label' => __( 'Youtube', 'wp-bootstrap-starter' ),
+        'section'    => 'social_menu',
+        'settings'   => 'social_menu_youtube',
+        'type'    => 'text'
+    ) ) );
+	
+	
+	 //Style Preset
 
     $wp_customize->add_section(
         'misc_styles',
