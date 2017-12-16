@@ -188,6 +188,20 @@ function wp_bootstrap_starter_scripts() {
     if(get_theme_mod( 'preset_style_setting' ) && get_theme_mod( 'preset_style_setting' ) !== 'default') {
         wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_style_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/typography/'.get_theme_mod( 'preset_style_setting' ).'.min.css', false, '' );
     }
+    if(get_theme_mod( 'preset_style_setting' ) === 'poppins-poppins') {
+        wp_enqueue_style( 'wp-bootstrap-starter-poppins-font', '//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' );
+    }
+	if(get_theme_mod( 'preset_style_bg_blending_setting' ) && get_theme_mod( 'preset_style_bg_blending_setting' ) !== 'default') {
+        wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_style_bg_blending_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/bg_blending/'.get_theme_mod( 'preset_style_bg_blending_setting' ).'.min.css', false, '' );
+    }
+	if(get_theme_mod( 'preset_style_bg_scrolling_setting' ) && get_theme_mod( 'preset_style_bg_scrolling_setting' ) !== 'scroll') {
+        wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_style_bg_scrolling_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/bg_scrolling/'.get_theme_mod( 'preset_style_bg_scrolling_setting' ).'.min.css', false, '' );
+    }
+	if(get_theme_mod( 'preset_style_content_bg_setting' )) {
+        wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_style_content_bg_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/content_bg/content_bg.min.css', false, '' );
+    }
+
+
 
 	wp_enqueue_script('jquery');
 

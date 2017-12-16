@@ -860,6 +860,9 @@ footer#colophon a {
 .entry-summary-video iframe {
   max-height: 250px;
 }
+.main.container {
+  padding-top: 15px;
+}
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/

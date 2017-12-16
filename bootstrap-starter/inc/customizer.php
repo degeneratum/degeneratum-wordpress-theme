@@ -22,9 +22,9 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
     //Style Preset
 
     $wp_customize->add_section(
-        'typography',
+        'misc_styles',
         array(
-            'title' => __( 'Preset Styles', 'wp-bootstrap-starter' ),
+            'title' => __( 'Misc Styles', 'wp-bootstrap-starter' ),
             //'description' => __( 'This is a section for the typography', 'wp-bootstrap-starter' ),
             'priority' => 20,
         )
@@ -38,7 +38,7 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
     ) );
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_style_setting', array(
         'label' => __( 'Typography', 'wp-bootstrap-starter' ),
-        'section'    => 'typography',
+        'section'    => 'misc_styles',
         'settings'   => 'preset_style_setting',
         'type'    => 'select',
         'choices' => array(
@@ -131,7 +131,7 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
    $wp_customize->add_section(
         'site_name_text_color',
         array(
-            'title' => __( 'Other Customizations', 'wp-bootstrap-starter' ),
+            'title' => __( 'Background and Colours', 'wp-bootstrap-starter' ),
             //'description' => __( 'This is a section for the header banner Image.', 'wp-bootstrap-starter' ),
             'priority' => 40,
         )
@@ -154,8 +154,57 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
             'panel' => 'styling_option_panel',
         )
     );
+	
 
 
+	$wp_customize->add_setting( 'preset_style_bg_blending_setting', array(
+        'default'   => 'default',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_style_bg_blending_setting', array(
+        'label' => __( 'Background Image Blending', 'wp-bootstrap-starter' ),
+        'section'    => 'site_name_text_color',
+        'settings'   => 'preset_style_bg_blending_setting',
+        'type'    => 'select',
+        'choices' => array(
+            'default' => 'Default',
+            'multiply' => 'Multiply',
+            'overlay' => 'Overlay'
+        )
+    ) ) );
+	
+	
+	$wp_customize->add_setting( 'preset_style_bg_scrolling_setting', array(
+        'default'   => 'fixed',
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_style_bg_scrolling_setting', array(
+        'label' => __( 'Background Image Scrolling', 'wp-bootstrap-starter' ),
+        'section'    => 'site_name_text_color',
+        'settings'   => 'preset_style_bg_scrolling_setting',
+        'type'    => 'select',
+        'choices' => array(
+            'scroll' => 'Scroll',
+            'fixed' => 'Fixed'
+        )
+    ) ) );
+	
+	$wp_customize->add_setting( 'preset_style_content_bg_setting', array(
+        'default'   => true,
+        'type'       => 'theme_mod',
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'preset_style_content_bg_setting', array(
+        'label' => __( 'Content Background', 'wp-bootstrap-starter' ),
+        'section'    => 'site_name_text_color',
+        'settings'   => 'preset_style_content_bg_setting',
+        'type'    => 'checkbox'
+    ) ) );
 
 
     $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
