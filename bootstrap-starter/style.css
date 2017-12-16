@@ -839,6 +839,8 @@ footer#colophon {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.9);
   font-size: 85%;
+}
+footer#colophon .site-info {
   opacity: 0.5;
 }
 .copyright {
