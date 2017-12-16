@@ -1,20 +1,23 @@
+@navbar-brand-link-color: #fff;
+@navbar-brand-bg-color: rgba(0,0,0,0.9);
+@navbar-brand-base-opacity: 0.5;
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 header#masthead {
   margin-bottom: 0;
-  background-color: rgba(0,0,0,0.9) ;
+  background-color: @navbar-brand-bg-color;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
   padding: .74rem 1rem;
   border-bottom: 0px solid #000 ;
 }
 
 .navbar-brand > a {
-  color: rgba(0, 0, 0, 0.9);
   font-size: 1.1rem;
   outline: medium none;
   text-decoration: none;
-  color: #fff;
+  color: @navbar-brand-link-color;
   font-weight: 700;
 }
 
@@ -50,7 +53,7 @@ header#masthead {
 }
 @media screen and (max-width: 1200px) {
 	a.page-scroller {
-	  color: #fff;
+	  color: @navbar-brand-link-color;
 	  font-size: 2.6rem;
 	  display: inline-block;
 	  position:absolute;
@@ -119,7 +122,7 @@ header#masthead {
 
 #masthead .navbar-nav > li > a {
   color: rgb(255,255,255);
-  opacity: 0.5;
+  opacity: @navbar-brand-base-opacity;
   padding: 0.5rem;
   font-weight: 500;
   font-size: 14px;

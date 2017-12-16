@@ -510,7 +510,6 @@ header#masthead {
   border-bottom: 0px solid #000 ;
 }
 .navbar-brand > a {
-  color: rgba(0, 0, 0, 0.9);
   font-size: 1.1rem;
   outline: medium none;
   text-decoration: none;
@@ -837,9 +836,10 @@ header#masthead {
 # Footer
 --------------------------------------------------------------*/
 footer#colophon {
-  color: #99979c;
-  background-color: #f7f7f7;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
   font-size: 85%;
+  opacity: 0.5;
 }
 .copyright {
   font-size: 0.875rem;
