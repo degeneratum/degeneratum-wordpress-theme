@@ -9,7 +9,7 @@
 		<?php the_content(); ?>
 	</div>
     <!-- 	This outputs the post TITLE -->
-	<h4 class="video-header entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+	<p class="video-header entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 
 </div>
 <!-- // Post Wrap End -->

@@ -19,6 +19,11 @@
 		<div class="container-fluid p-3 p-md-5">
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
+                
+                <span class="sep"> | &nbsp;</span>
+                
+                <a class="credits" href="https://stackoverflow.com/story/unitsix" target="_blank" title="Site by unitsix" alt="Site by unitsix"><?php echo esc_html__('u6','wp-bootstrap-starter'); ?></a>
+                
                 <br/>
                 <span id="social_items">
                 <?php if ( get_theme_mod( 'social_menu_facebook' ) &&  get_theme_mod( 'social_menu_facebook' ) !== ''): ?>	
@@ -46,9 +51,6 @@
                 
                 <?php endif; ?>
                 </span>
-                <span class="sep"> | &nbsp;</span>
-                
-                <a class="credits" href="https://stackoverflow.com/story/unitsix" target="_blank" title="Site by unitsix" alt="Site by unitsix"><?php echo esc_html__('u6','wp-bootstrap-starter'); ?></a>
 
             </div><!-- close .site-info -->
 		</div>

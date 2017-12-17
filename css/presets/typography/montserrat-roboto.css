@@ -241,8 +241,7 @@ div#page-sub-header p {
 .form-control {
     font-size: 1rem;
 }
-.simcal-default-calendar-list dt.simcal-day-label, .album-grid p, h4.video-header {
+.simcal-default-calendar-list dt.simcal-day-label, .album-grid p, .video-header {
     font-family: "Montserrat",sans-serif;
     letter-spacing: 1.5px;
-	font-size: 0.875rem !important;
 }
