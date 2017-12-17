@@ -898,6 +898,8 @@ element.style {
   }
   .album-grid a:hover + p {
     opacity: 1;
+  }
+  .album-grid a:hover + p a {
     color: #fff !important;
   }
   .album-grid a:hover img {
