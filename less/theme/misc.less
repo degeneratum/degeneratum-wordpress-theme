@@ -24,8 +24,10 @@ element.style {
 }
 .album-grid {
 	padding: 0 5px;
-	& img {		
+	& img, & p {		
 		transition: .5s ease;
+	}
+	& img {	
 		width: 100%;
 	}
 }
@@ -33,9 +35,15 @@ element.style {
 	.album-grid {
 		& p{
 			margin: -50% 0 50% 20px;
+			opacity: 0;
 		}
-		&:hover img{
-			opacity: 0.05;
+		& a:hover{
+			& p{
+				opacity: 1;
+			}
+			& img{
+				opacity: 0.05;
+			}
 		}
 	}
 }
