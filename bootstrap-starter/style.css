@@ -896,7 +896,7 @@ element.style {
     margin: -50% 0 50% 20px;
     opacity: 0;
   }
-  .album-grid a:hover p {
+  .album-grid a:hover + p {
     opacity: 1;
   }
   .album-grid a:hover img {
@@ -912,6 +912,10 @@ element.style {
   .album-grid {
     padding: 0 100px !important;
   }
+}
+.iframe-container {
+  overflow: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 /*--------------------------------------------------------------
 # Typography
