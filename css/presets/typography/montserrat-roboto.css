@@ -100,6 +100,13 @@ h5, h6 {
 h5, h3 {
     font-weight: 600 !important;
 }
+.band-bios h4 {
+	font-size: 12px;
+} 
+.band-bios h5 {
+	font-size: 10px;
+}
+
 
 .comment-respond h3,
 .entry-comments h3 {
@@ -233,4 +240,7 @@ div#page-sub-header p {
 
 .form-control {
     font-size: 1rem;
+}
+.simcal-default-calendar-list dt.simcal-day-label{
+    font-family: "Montserrat",sans-serif;
 }
