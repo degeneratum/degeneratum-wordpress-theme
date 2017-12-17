@@ -914,7 +914,7 @@ element.style {
   }
 }
 .iframe-container {
-  overflow: scroll !important;
+  overflow: visible !important;
   -webkit-overflow-scrolling: touch !important;
 }
 /*--------------------------------------------------------------
