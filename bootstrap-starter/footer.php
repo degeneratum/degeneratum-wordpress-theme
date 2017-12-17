@@ -56,7 +56,16 @@
 <?php endif; ?>
 </div><!-- #page -->
 <script>
-jQuery('#main_nav_items ul').append('<li class="nav-item">' + jQuery('#social_items').html() + '</li>')
+jQuery('#main_nav_items ul').append('<li class="nav-item">' + jQuery('#social_items').html() + '</li>');
+
+jQuery( "h1, h2, h3, a" ).each(function( index ) {
+	if( jQuery(this).text() !== '' ){
+  		jQuery( this ).attr( "data-text", jQuery(this).text() );
+	} else {
+		jQuery( this ).attr( "data-text", '-_' );
+	}
+});
+
 </script>
 <?php wp_footer(); ?>
 </body>

@@ -874,6 +874,9 @@ footer#colophon a {
 #main_nav_items .credits {
   display: inline-block;
 }
+.site-content {
+  min-height: calc(100vh - 185px);
+}
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
