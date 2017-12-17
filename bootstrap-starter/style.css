@@ -898,9 +898,10 @@ element.style {
   }
   .album-grid a:hover + p {
     opacity: 1;
+    color: #fff !important;
   }
   .album-grid a:hover img {
-    opacity: 0.05;
+    opacity: 0.3;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
