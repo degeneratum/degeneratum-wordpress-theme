@@ -22,3 +22,30 @@ element.style {
     max-height: 369px;
     border-bottom-width: 1px;
 }
+.album-grid {
+	padding: 0 5px;
+	& img {		
+		transition: .5s ease;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 767px) {
+	.album-grid {
+		& p{
+			margin: -50% 0 50% 20px;
+		}
+		&:hover img{
+			opacity: 0.05;
+		}
+	}
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+	.album-grid {
+		padding: 0 50px !important;
+	}
+}
+@media screen and (min-width: 992px) {
+	.album-grid {
+		padding: 0 100px !important;
+	}
+}
