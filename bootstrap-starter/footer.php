@@ -20,7 +20,7 @@
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                 
-                <span class="sep"> | </span>
+                &nbsp; | &nbsp;
                 
                 <a class="credits" href="https://stackoverflow.com/story/unitsix" target="_blank" title="Site by unitsix" alt="Site by unitsix"><?php echo esc_html__('u6','wp-bootstrap-starter'); ?></a>
                 
