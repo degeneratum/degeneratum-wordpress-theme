@@ -19,7 +19,7 @@
 		<div class="container-fluid p-3 p-md-5">
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
-                <span class="sep">&nbsp; | </span>
+                <br/>
                 <span id="social_items">
                 <?php if ( get_theme_mod( 'social_menu_facebook' ) &&  get_theme_mod( 'social_menu_facebook' ) !== ''): ?>	
                 &nbsp;<a class="credits" title="facebook" href="<?php echo esc_url( get_theme_mod( 'social_menu_facebook' )); ?>" class="nav-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;
