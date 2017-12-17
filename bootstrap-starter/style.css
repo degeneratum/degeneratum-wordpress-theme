@@ -896,14 +896,11 @@ element.style {
     margin: -50% 0 50% 20px;
     opacity: 0;
   }
-  .album-grid p a {
-    color: #fff !important;
-  }
   .album-grid a:hover + p {
-    opacity: 1 !important;
+    opacity: 1;
   }
   .album-grid a:hover img {
-    opacity: 0.3;
+    opacity: 0.05;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {
