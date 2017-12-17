@@ -896,11 +896,11 @@ element.style {
     margin: -50% 0 50% 20px;
     opacity: 0;
   }
-  .album-grid a:hover + p {
-    opacity: 1;
-  }
-  .album-grid a:hover + p a {
+  .album-grid p a {
     color: #fff !important;
+  }
+  .album-grid a:hover + p {
+    opacity: 1 !important;
   }
   .album-grid a:hover img {
     opacity: 0.3;
