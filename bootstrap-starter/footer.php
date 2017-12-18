@@ -18,15 +18,15 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container-fluid p-3 p-md-5">
             <div class="site-info row">
-            	<div class="col-xs-12 col-md-3">
+            	<div class="col-xs-12 col-md-4 col-lg-3">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
                 
-                &nbsp; | &nbsp;
+                &nbsp;|&nbsp;
                 
-               		<a class="credits" href="https://stackoverflow.com/story/unitsix" target="_blank" title="Site by unitsix" alt="Site by unitsix"><?php echo esc_html__('u6','wp-bootstrap-starter'); ?></a>
+               		<a class="credits small" href="https://stackoverflow.com/story/unitsix" target="_blank" title="Site by unitsix" alt="Site by unitsix"><?php echo esc_html__('u6','wp-bootstrap-starter'); ?></a>
                 
                 </div>
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-6">
                     <span id="social_items">
                     <?php if ( get_theme_mod( 'social_menu_facebook' ) &&  get_theme_mod( 'social_menu_facebook' ) !== ''): ?>	
                     &nbsp;<a class="credits" title="facebook" href="<?php echo esc_url( get_theme_mod( 'social_menu_facebook' )); ?>" class="nav-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;
