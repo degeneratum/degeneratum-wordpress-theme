@@ -24,17 +24,19 @@ element.style {
 }
 .album-grid {
 	padding: 0 5px;
+	text-align: center;
 	& img, & p {		
 		transition: .5s ease;
 	}
 	& img {	
 		width: 100%;
+		max-width: 260px;
 	}
 }
 @media screen and (min-width: 767px) {
 	.album-grid {
 		& p{
-			margin: -50% 0 50% 20px;
+			margin: -50% 0 50% 0;
 			opacity: 0;
 		}
 		& a:hover{
