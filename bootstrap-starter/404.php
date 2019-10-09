@@ -6,6 +6,7 @@
  *
  * @package WP_Bootstrap_Starter
  */
+//test
 
 get_header(); ?>
 
